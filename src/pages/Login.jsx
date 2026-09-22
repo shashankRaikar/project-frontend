@@ -46,7 +46,7 @@ const Login = () => {
 
     try {
       // Send credentials to backend with credentials: 'include' to receive HttpOnly cookie
-      const response = await fetch(`${API_BASE_URL}/login`, {
+    const response = await fetch(`${API_BASE_URL}/api/login`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
