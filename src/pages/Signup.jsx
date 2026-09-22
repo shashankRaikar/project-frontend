@@ -75,7 +75,7 @@ const Signup = () => {
     setLoading(true);
 
     try {
-      const response = await fetch(`${API_BASE_URL}/reg`, {
+      const response = await fetch(`${API_BASE_URL}/api/reg`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
