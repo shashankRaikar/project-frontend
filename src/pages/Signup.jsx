@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { User, Lock, Mail, Phone, Eye, EyeOff, CheckCircle2, AlertCircle, Loader2, ArrowRight } from 'lucide-react';
 
-const API_BASE_URL = 'http://localhost:3030/api';
+const API_BASE_URL = import.meta.env.VITE_API_URL;
 
 const Signup = () => {
   const navigate = useNavigate();
