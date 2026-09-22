@@ -13,7 +13,7 @@ const ProtectedRoute = ({ children }) => {
 
   const checkAuth = async () => {
     try {
-      const response = await fetch(`${API_BASE_URL}/home`, {
+      const response = await fetch(`${API_BASE_URL}/api/home`, {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',
